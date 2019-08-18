@@ -126,10 +126,10 @@ class LearnQuestionPage extends Component {
                 // wenn das Ende des Arrays erreicht ist
                 
                 
-                /** 
+                /*
                 aktuell nicht implementiert, hier könnte man sich jedoch den Score für Learnfragen anzeigen lassen
                 und zu der neuen LearnResult.js (müsste angepasst werden)
-                
+                */
                 
                 for (let i = 0, l = this.arrnew.length; i < l; i++) {
                     console.log(i);
@@ -148,14 +148,14 @@ class LearnQuestionPage extends Component {
                         }
                     }
                 if (this.props.quiz.learnarr[i] !== this.arrnew[i].correctAnswer) { 
-                        this.props.wrongLearn(i);
+                        this.props.wrong(i);
                 }
             }
             this.props.getLearnBasisScore(this.basisScore);
             this.props.getLearnSpezScore(this.spezScore);
             actions.toResult();
-            */
-           actions.toLearnStart();
+            
+           //actions.toLearnStart();
         }
     }
     /**

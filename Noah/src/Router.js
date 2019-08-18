@@ -30,13 +30,14 @@ import MarkedQuestion from './components/MarkedQuestion';
 import RepeatAll from './components/RepeatAll';
 
 import Videos2List from './components/Videos2List';
-import GlossarList from './components/GlossarList';
+import GlossarList from './components/GlossarList_New_Try';
 import VideoList from './components/VideoList';
 import * as img from './assets/img';
 import { styles } from './components/styleSheets/Router';
 import Fragekatalog from './components/Fragekatalog';
 import LearnStartPage from './components/LearnStartPage';
 import LearnQuestionPage from './components/LearnQuestionPage';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const TabIcon = ({ title }) => {
@@ -111,7 +112,7 @@ class RouterComponent extends Component {
                     />
             </Scene>
 
-            <Scene key="glossary" title="Suche" icon={TabIcon}> 
+            <Scene key="glossary" title="Lexikon" icon={TabIcon}> 
                     <Scene 
                         key="glossar" 
                         title="Glossar" 
